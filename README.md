@@ -8,7 +8,7 @@ This model is then compared to an Azure AutoML run.
 ## Summary
 The dataset provided by UCI Machine Learning Repostory contains information regarding direct bank marketing campaigns. More specifically, it contains information about the age, job, day of contact, contact type such as telephone and how long a banking clerk had contact with (potential) customers. Based on those information we seek to predict if a client subscribet to a term deposit after contact.
 
-The best performing model was a VotingEnsemble obtained by AutoML, which performed  
+The best performing model was a VotingEnsemble obtained by AutoML, which outperformed logistic regression by 0.0072 accuracy points.
 
 ## Scikit-learn Pipeline
 The pipeline architecture consisted of downloading the data followed by cleaning the data. More specifically, one-hot encoding of categorical attributes, remove data records with missing values, and splitting data into training and test data according to a splitting ratio of 0.8:0.2. As the dataset is a binary classification problem, logistic regression will serve as a fairly simple but powerful baseline model.
